@@ -4,77 +4,42 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Creating a Responsive Web Design</title>
-		<link rel="stylesheet" type="text/css" media="screens" href="css/screen.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css">
 	</head>
 	<body>
 
 		<div id="main-container">
-			
-			<nav>
-				<ul>
-					<li>
-						<a title="About Us" href="#">About Us</a>
-						<ul>
-							<li><a title="Sub Link 1" href="#">Sub Link 1</a></li>
-							<li><a title="Sub Link 2" href="#">Sub Link 2</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="">Design Corner</a>
-						<ul>
-							<li><a title="Sub Link 1" href="#">Sub Link 1</a></li>
-							<li><a title="Sub Link 2" href="#">Sub Link 2</a></li>
-							<li><a title="Sub Link 3" href="#">Sub Link 3</a>
-								<ul>
-									<li><a title="Sub Sub Link 1" href="#">Sub Link 1</a></li>
-									<li><a title="Sub Sub Link 2" href="#">Sub Link 2</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="">Products</a>
-						<ul>
-							<li><a title="Sub Link 1" href="#">Sub Link 1</a></li>
-							<li><a title="Sub Link 2" href="#">Sub Link 2</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="">Contact Us</a>
-					</li>
-				</ul>
-			</nav>
 
 			<header>
-				<a href="" title="Everyday Things" class="logo">Everyday Things</a>
+				<a href="#" title="Everyday Things" class="logo"><span>Everyday Things</span></a>
 				<div class="hero">
-					<h1>Add interest with natural textures</h1>
-					<a class="btn" title="Get advice from top designers" href="#">Get advice from top designers</a>
+					<h1>Add Interest With Natural Textures</h1>
+					<a class="btn" title="Get advice from top designers" href="#">Get advice <span>from top designers</span></a>
 				</div>
 			</header>
 
-			<section class="main">
+			<section class="main clearfix">
 				<aside>
-					<div class="content">
+					<div class="content trending">
 						<h3><a href="#">What&apos;s trending</a></h3>
 						<p>Lorem ipsum dolor sit amet, consect etuer adipiscing elit. <a href="http://codifydesign.com">Morbi commodo</a>, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.</p>
 					</div>
 				</aside>
 				<aside>
-					<div class="content">
+					<div class="content find-it">
 						<h3><a href="#">Where to find it</a></h3>
 						<p>Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Lorem ipsum dolor sit amet, consect.</p>
 					</div>
 				</aside>
 				<aside>
-					<div class="content">
+					<div class="content tools">
 						<h3><a href="#">Tools of the trade</a></h3>
 						<p>Nullam sit amet enim. Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci rhoncus neque, id pulvinar odio.</p>
 					</div>
 				</aside>
 			</section>
 
-			<section class="atmosphere">
+			<section class="atmosphere clearfix">
 				<article>
 					<h2>Creating a modern atmosphere</h2>
 					<p>Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Lorem ipsum dolor sit amet etuer adipiscing elit.  Pulvinar odio lorem non turpis. Nullam sit amet enim lorem.</p>
@@ -82,7 +47,7 @@
 				</article>
 			</section>
 
-			<section class="how-to">
+			<section class="how-to clearfix">
 				<aside>
 					<div class="content">
 						<img src="images/photo_seating.jpg" alt="Choosing the proper seating">
@@ -107,6 +72,40 @@
 					</p>
 				</blockquote>
 			</section>
+			<nav class="clearfix">
+				<ul>
+					<li>
+						<a title="About Us" aria-haspopup="true" href="#">About Us</a>
+						<ul>
+							<li><a title="Sub Link 1" href="#">Sub Link 1</a></li>
+							<li><a title="Sub Link 2" href="#">Sub Link 2</a></li>
+						</ul>
+					</li>
+					<li>
+						<a aria-haspopup="true" href="#">Design Corner</a>
+						<ul>
+							<li><a title="Sub Link 1" href="#">Sub Link 1</a></li>
+							<li><a title="Sub Link 2" href="#">Sub Link 2</a></li>
+							<li><a title="Sub Link 3" aria-haspopup="true" href="#">Sub Link 3</a>
+								<ul>
+									<li><a title="Sub Sub Link 1" href="#">Sub Link 1</a></li>
+									<li><a title="Sub Sub Link 2" href="#">Sub Link 2</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a aria-haspopup="true" href="#">Products</a>
+						<ul>
+							<li><a title="Sub Link 1" href="#">Sub Link 1</a></li>
+							<li><a title="Sub Link 2" href="#">Sub Link 2</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">Contact Us</a>
+					</li>
+				</ul>
+			</nav>
 
 			<footer>
 				&copy; Everyday Things
