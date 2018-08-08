@@ -214,9 +214,17 @@ section.main {
 }
 
 section.main aside{
+	opacity: 0;
+	transform: scale(0.5);
 	width: 33%;
 	float: left;
 	text-align: center;
+	transition: all .8s;
+}
+
+section.main aside.animate {
+	opacity: 1;
+	transform: scale(1);
 }
 
 section.main .content {
